@@ -35,9 +35,9 @@ public:
     }
 
     void write(ostream & o) const {
-        if (leftChild){leftChild->write(o);}
+        if (leftChild){leftChild-> write(o);}
         o << " " << data << " ";
-        if (rightChild){rightChild->write(o);}
+        if (rightChild){rightChild-> write(o);}
     }
 
 };
