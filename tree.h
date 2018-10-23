@@ -12,12 +12,48 @@ private:
 
 public:
 
+    //Default constructor
     BinarySearchTree(){};
 
+    //copy constructor
+    BinarySearchTree(const BinarySearchTree &original) {
+        if (!original.root){
+            return;
+        }
+        else {
+            insert(original.root -> data);
+            cloneTree(original.root.get());
+        }
+    }
+
+    void operator =(const BinarySearchTree &original){
+        if (!original.root){
+            return;
+        }
+        else {
+            root.reset(nullptr);
+            insert(original.root -> data);
+            cloneTree(original.root.get());
+        }
+
+    }
+
+
+    void cloneTree(TreeNode<T> * oldTreePos){
+        if (oldTreePos->rightChild){
+            insert(oldTreePos -> rightChild -> data);
+            cloneTree(oldTreePos->rightChild.get());
+        }
+
+        if (oldTreePos->leftChild){
+            insert(oldTreePos -> leftChild -> data);
+            cloneTree(oldTreePos->leftChild.get());
+        }
+    }
 
 
     void write(ostream & o) const {
-        root->write(o);
+        if (root) {root->write(o);}
     }
 
 

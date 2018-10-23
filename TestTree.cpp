@@ -29,6 +29,7 @@ int main() {
         BinarySearchTree<int> tree;
         
         tree.insert(5);
+
         
         {
             ostringstream s;
@@ -45,6 +46,7 @@ int main() {
         tree.insert(1);
         tree.insert(2);
         tree.insert(6);
+
         
         {
             ostringstream s1;
