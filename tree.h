@@ -26,14 +26,16 @@ public:
         }
     }
 
-    void operator =(const BinarySearchTree &original){
+    //Assignment operator
+    BinarySearchTree& operator =(const BinarySearchTree &original){
         if (!original.root){
-            return;
+            return *this;
         }
         else {
             root.reset(nullptr);
             insert(original.root -> data);
             cloneTree(original.root.get());
+            return *this;
         }
 
     }
@@ -60,7 +62,7 @@ public:
 
     TreeNode<T>* insert(T newNode) {
 
-        TreeNode<T>* nNode = new TreeNode<T>(newNode);
+        auto* nNode = new TreeNode<T>(newNode);
         TreeNode<T>* parent = nullptr;
 
         if(!root){

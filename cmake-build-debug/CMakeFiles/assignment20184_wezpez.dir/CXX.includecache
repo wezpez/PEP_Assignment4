@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/TestTreeMap.cpp
+treemap.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treemap.h
+iostream
+-
+sstream
+-
+string
+-
+
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h
+treenode.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h
+
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treemap.h
+tree.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h
+
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h
+iostream
+-
+memory
+-
+utility
+-
+
