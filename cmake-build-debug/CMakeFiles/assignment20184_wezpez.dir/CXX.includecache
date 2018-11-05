@@ -6,23 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/TestTreeMap.cpp
-treemap.h
-/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treemap.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/TestTreeD.cpp
+treenode.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h
+tree.h
+/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h
+algorithm
+-
 iostream
 -
 sstream
 -
-string
+vector
 -
 
 /Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h
 treenode.h
 /Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h
-
-/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treemap.h
-tree.h
-/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h
 
 /Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h
 iostream

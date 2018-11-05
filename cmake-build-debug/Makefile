@@ -123,32 +123,32 @@ assignment20184_wezpez/fast:
 	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/build
 .PHONY : assignment20184_wezpez/fast
 
-TestTreeMap.o: TestTreeMap.cpp.o
+TestTreeD.o: TestTreeD.cpp.o
 
-.PHONY : TestTreeMap.o
+.PHONY : TestTreeD.o
 
 # target to build an object file
-TestTreeMap.cpp.o:
-	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeMap.cpp.o
-.PHONY : TestTreeMap.cpp.o
+TestTreeD.cpp.o:
+	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeD.cpp.o
+.PHONY : TestTreeD.cpp.o
 
-TestTreeMap.i: TestTreeMap.cpp.i
+TestTreeD.i: TestTreeD.cpp.i
 
-.PHONY : TestTreeMap.i
+.PHONY : TestTreeD.i
 
 # target to preprocess a source file
-TestTreeMap.cpp.i:
-	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeMap.cpp.i
-.PHONY : TestTreeMap.cpp.i
+TestTreeD.cpp.i:
+	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeD.cpp.i
+.PHONY : TestTreeD.cpp.i
 
-TestTreeMap.s: TestTreeMap.cpp.s
+TestTreeD.s: TestTreeD.cpp.s
 
-.PHONY : TestTreeMap.s
+.PHONY : TestTreeD.s
 
 # target to generate assembly for a file
-TestTreeMap.cpp.s:
-	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeMap.cpp.s
-.PHONY : TestTreeMap.cpp.s
+TestTreeD.cpp.s:
+	$(MAKE) -f CMakeFiles/assignment20184_wezpez.dir/build.make CMakeFiles/assignment20184_wezpez.dir/TestTreeD.cpp.s
+.PHONY : TestTreeD.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... assignment20184_wezpez"
-	@echo "... TestTreeMap.o"
-	@echo "... TestTreeMap.i"
-	@echo "... TestTreeMap.s"
+	@echo "... TestTreeD.o"
+	@echo "... TestTreeD.i"
+	@echo "... TestTreeD.s"
 .PHONY : help
 
 

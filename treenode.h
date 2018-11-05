@@ -40,6 +40,75 @@ public:
         if (rightChild){rightChild-> write(o);}
     }
 
+    int maxDepth(TreeNode* currentNode){
+
+        if (currentNode == nullptr){
+            return 0;
+        }
+        else {
+            int leftDepth = maxDepth(currentNode -> leftChild.get());
+            int rightDepth = maxDepth(currentNode -> rightChild.get());
+
+            if (rightDepth > leftDepth){
+                return rightDepth + 1;
+            }
+            else {
+                return leftDepth + 1;
+            }
+        }
+    }
+
+
+};
+
+template <class T>
+class TreeNodeIterator {
+
+public:
+
+    TreeNode<T> * current;
+
+
+    TreeNodeIterator(TreeNode<T> * currentIn)
+    : current(currentIn) {}
+
+
+    //maybe come back here if you get errors
+    T & operator*() {
+        return current -> data;
+    }
+
+    bool operator==(const TreeNodeIterator & rhs) {
+        return (current == rhs.current);
+    }
+
+    bool operator!=(const TreeNodeIterator & rhs) {
+        return (current != rhs.current);
+    }
+
+
+    void operator++() {
+
+        if(current->rightChild) {
+            current = current -> rightChild.get();
+            while (current->leftChild){
+                current = current -> leftChild.get();
+            }
+        }
+        else if(!current->parent){
+            current = nullptr;
+        }
+        else {
+            while(current != current->parent->leftChild.get()){
+                if(!current->parent){
+                    current = nullptr;
+                }
+                current = current->parent;
+            }
+            current = current->parent;
+        }
+    }
+
 };
 
 // do not edit below this line

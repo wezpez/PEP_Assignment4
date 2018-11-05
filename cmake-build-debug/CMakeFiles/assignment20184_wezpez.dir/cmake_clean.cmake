@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/assignment20184_wezpez.dir/TestTreeMap.cpp.o"
+  "CMakeFiles/assignment20184_wezpez.dir/TestTreeD.cpp.o"
   "assignment20184_wezpez.pdb"
   "assignment20184_wezpez"
 )

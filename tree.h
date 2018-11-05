@@ -125,7 +125,39 @@ public:
 
     }
 
+    // finds and returns a pointer to the left most node in the tree
+    TreeNodeIterator<T> begin() {
 
+        if (root == nullptr) {
+            TreeNodeIterator<T> newIterator = TreeNodeIterator<T>(nullptr);
+            return newIterator;
+        }
+        else {
+            TreeNodeIterator<T> newIterator = TreeNodeIterator<T>(root.get());
+            bool found = false;
+
+            while(!found){
+                if (newIterator.current-> leftChild.get()) {
+                    newIterator.current = newIterator.current-> leftChild.get();
+                }
+                else {
+                    found = true;
+                }
+            }
+            return newIterator;
+        }
+    }
+
+
+    TreeNodeIterator<T> end() {
+        TreeNodeIterator<T> newIterator = TreeNodeIterator<T>(nullptr);
+        return newIterator;
+    }
+
+    int maxDepth(){
+        int treeMaxDepth = root->maxDepth(root.get());
+        return treeMaxDepth;
+    }
 
 
 };

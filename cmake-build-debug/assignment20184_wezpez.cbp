@@ -82,10 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/TestTreeMap.cpp">
+		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/TestTreeD.cpp">
+			<Option target="assignment20184_wezpez"/>
+		</Unit>
+		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/tree.h">
 			<Option target="assignment20184_wezpez"/>
 		</Unit>
 		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treemap.h">
+			<Option target="assignment20184_wezpez"/>
+		</Unit>
+		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/treenode.h">
 			<Option target="assignment20184_wezpez"/>
 		</Unit>
 		<Unit filename="/Users/patrickwhyte/Documents/GitHub/assignment20184-wezpez/CMakeLists.txt">
