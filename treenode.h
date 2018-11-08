@@ -73,7 +73,6 @@ public:
     : current(currentIn) {}
 
 
-    //maybe come back here if you get errors
     T & operator*() {
         return current -> data;
     }
@@ -88,25 +87,25 @@ public:
 
 
     void operator++() {
-
         if(current->rightChild) {
             current = current -> rightChild.get();
             while (current->leftChild){
                 current = current -> leftChild.get();
             }
         }
-        else if(!current->parent){
-            current = nullptr;
-        }
-        else {
-            while(current != current->parent->leftChild.get()){
-                if(!current->parent){
-                    current = nullptr;
+        else if(current->parent){
+            while(current->parent){
+                if(current->parent->data > current->data) {
+                    break;
                 }
                 current = current->parent;
             }
             current = current->parent;
         }
+        else {
+            current = nullptr;
+        }
+
     }
 
 };

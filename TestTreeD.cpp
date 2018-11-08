@@ -30,8 +30,11 @@ int main() {
         vector<int> putIn{5,1,2,6};
         
         for (const int & e : putIn) {
-            tree.insert(e);        
+            //std::cout << "input: " << e << "\n";
+            tree.insert(e);
+            //std::cout << "tree size: " << tree.getCount() << "\n";
         }
+
              
         std::sort(putIn.begin(), putIn.end());
 

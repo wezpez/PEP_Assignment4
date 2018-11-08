@@ -83,10 +83,10 @@ public:
             }
 
             if (parent->data < nNode->data){
-                parent->rightChild.reset(nNode);
+                parent->setRightChild(nNode);
             }
             else {
-                parent->leftChild.reset(nNode);
+                parent->setLeftChild(nNode);
             }
 
         }
@@ -134,16 +134,11 @@ public:
         }
         else {
             TreeNodeIterator<T> newIterator = TreeNodeIterator<T>(root.get());
-            bool found = false;
 
-            while(!found){
-                if (newIterator.current-> leftChild.get()) {
-                    newIterator.current = newIterator.current-> leftChild.get();
-                }
-                else {
-                    found = true;
-                }
+            while (newIterator.current->leftChild){
+                newIterator.current = newIterator.current-> leftChild.get();
             }
+
             return newIterator;
         }
     }
